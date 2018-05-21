@@ -1,0 +1,136 @@
+.infopage{
+  display: grid;
+  grid-template-rows: 4.5em auto;
+  grid-template-columns: auto;
+  background: linear-gradient(172deg, #e6e6e6 70%, #e6e6e6 40%);
+
+}
+.infopage .container{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: row;
+  margin: 100px;
+  justify-content: space-around;
+
+}
+.infopage .carwash {
+  background: transparent;
+  height: 100%;
+  width: auto;
+  margin-top: -1400px;
+  opacity: 0.03;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  font-weight: 100;
+}
+
+.infopage .title{
+  color: #000;
+  font-size: 3em;
+  text-align: center;
+}
+
+.infopage .container .square{
+  align-items: center;
+  height: 350px;
+  width: 300px;
+  transition: all 0.5s;
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infopage .container .square a,.infopage .container .square span{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 100;
+  color: black;
+  text-decoration: none;
+}
+.infopage .container .circle,.infopage .container .map-style{
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  transition: all 1s;
+  border: 6px solid white;
+  background: linear-gradient(180deg,orange,red);
+  margin: 40px;
+  display: flex;
+  align-items: center;
+}
+.infopage .container .map-style {
+background-color: transparent;
+}
+.infopage .container .map-style:hover {
+  //margin:0;
+  height: 250px;
+  border-radius: 10px;
+  width: 250px;
+  align-items: center;
+}
+.logo{
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color:white;
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.5em;
+}
+i{
+  border: none;
+}
+@media screen and (max-width:992px){
+  .infopage .container .left .map-style {
+  }
+  .infopage .container {
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width:500px){
+  .infopage{
+    grid-template-rows: 3em auto;
+  }
+ .infopage .title {
+   font-size: 2em;
+ }
+ .infopage .container .square{
+   height: 100%;
+   width: auto;
+
+   margin: 11px 0px;
+   -ms-flex-pack: justify;
+   justify-content: space-evenly;
+ }
+.infopage .container .circle{
+  height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  margin: 0px;
+}
+.infopage .container .map-style {
+  height: 150px;
+  width: 150px;
+}
+.infopage {
+    background: linear-gradient(172deg, #e6e6e6 70%, #e6e6e6 40%);
+}
+.infopage .container .map-style:hover {
+  height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  transition: all 1s;
+  border: 6px solid white;
+  background: linear-gradient(180deg,orange,red);
+  margin: 40px;
+  display: flex;
+  align-items: center;
+}
+}

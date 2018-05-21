@@ -1,0 +1,28 @@
+.offersbox{
+  background-color: #2d729f;
+  //border: 3px solid #2d729f;
+  border-radius: 10px;
+  height: auto;
+  width: 20%;
+  height: auto;
+  grid-row-start:2;
+  grid-row-end:4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  width: 40%;
+}
+.offersbox:hover{
+  background-color: #46aff3;
+  cursor:pointer;
+}
+.offersbox-text{
+  font-family: 'Roboto','sans-serif';
+  font-size: 1em;
+  color: white;
+  display: flex;
+  flex:wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}

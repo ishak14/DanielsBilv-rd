@@ -1,0 +1,147 @@
+.background{
+  background-image: url("https://www.walldevil.com/wallpapers/w04/170495-audi-quattro-s1-cars-minimalistic-simple-background.jpg");
+  z-index:-1;
+  height: 1000px;
+  margin-top: -700px;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200%;
+
+}
+.offers{
+  background:linear-gradient(172deg, transparent 76%, #e6e6e6 40%);
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  height: 100vh;
+}
+
+.offers .container{
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-rows: 9em auto;
+  grid-template-columns: auto;
+
+  z-index: 10;
+}
+.offers-title{
+  font-size: 3em;
+  font-family: 'Roboto','sans-serif';
+  margin-left: auto;
+  margin-right: auto;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: BLACK;
+}
+.row-info{
+  grid-row-start: 2;
+  grid-row-end:4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 3px solid #082F3A;
+  margin-right: 20px;
+  background-color: #2d739f;
+  color: white;
+}
+.row-info-title{
+  font-size: 2em;
+  text-align: center;
+}
+.row-info-text{
+  margin-top: 2em;
+  text-align: left;
+  margin-left: 1em;
+}
+.offersbox-flex-container{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 60vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: start;
+  justify-content: start;
+  width: auto !important;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.2em;
+}
+.offersbox-flex-container div {
+  overflow: hidden;
+
+}
+.paper{
+  margin: 10px 50px 0px 0;
+  height: 26%;
+  width: 80%;
+}
+@media screen and (max-width:992px){
+  .offers{
+    grid-template-rows: 8em auto;
+  }
+  .offers .container {
+    grid-template-rows: 4em 10em 16em;
+  }
+  .offersbox-flex-container{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    -ms-flex-direction: row;
+    /* flex-direction: row; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+    -ms-flex-pack: distribute;
+    /* justify-content: space-around; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: start;
+    justify-content: start;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .offers-title{
+    font-size: 2em;
+  }
+}
+@media screen and (max-width:320px){
+  .offers{
+    grid-template-rows: 7.8em auto;
+  }
+  .offers .container {
+    grid-template-rows: 2.4em 10em 15em;
+  }
+}
+@media screen and (max-width:400px){
+  .offersbox-flex-container{
+    font-size: 0.7em;
+  }
+
+}

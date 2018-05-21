@@ -1,0 +1,42 @@
+.top-info{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  top: 0%;
+  overflow: visible;
+  left: 0%;
+  right: 0%;
+  position: fixed;
+  width: 30%;
+  background: #203260;
+  text-align: center;
+  color: white;
+  padding: 0px 20px;
+  z-index: 100;
+}
+.top-info .open-hour{
+  margin-top: 15px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+}
+.top-info .phone-number{
+  margin-top: 15px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+@media screen and (max-width: 992px){
+  .top-info{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .top-info{
+    height: 60px;
+  }
+}

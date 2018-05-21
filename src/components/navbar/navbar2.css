@@ -1,0 +1,63 @@
+.navbar{
+
+  width: 100vw;
+  background: #203260;
+  z-index: 9;
+  text-align: center;
+  color: white;
+  padding: 0 0 0 0;
+  z-index: 99;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0px 16px;
+  font-family: sans-serif;
+  color: white;
+
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+.navbar-items{
+  display: flex;
+}
+.navbar-items-right{
+  margin-left:auto;
+  padding: 0px 16px;
+}
+.navbar-link{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  padding: 30px 50px;
+  background-color: #263a6b;
+}
+.navbar-link.offerspage{
+    background-color: #172d5f;
+}
+.navbar-link.about-us{
+    background-color: #172d5f;
+}
+.navbar-link-toggle-hide {
+  display: none;
+}
+.navbar-toggle-show {
+    display: flex;
+  }
+.navbar-link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   }
+@media screen and (max-width:786px){
+.navbar{
+  display: none;
+}
+}
+@media screen and (max-width:320px){
+
+}

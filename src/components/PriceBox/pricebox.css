@@ -1,0 +1,57 @@
+.pricebox-box{
+  margin: 10px;
+  background-color: #fff;
+  width: 10em;
+  height: inherit;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4em auto;
+  border-radius: 10px;
+}
+@media screen and (max-width: 992px) {
+  .pricebox-box{
+        grid-template-columns: 4em 13em;
+        width:auto;
+  }
+  .pricebox-box > .title-container{
+    border-bottom-left-radius: 10px;
+
+  }
+}
+@media screen and (max-width: 320px) {
+  .pricebox-box{
+    height: 50px
+  }
+  .title-container{
+    height: 50px;
+  }
+}
+.pricebox-box > .title-container{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #ff6767;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+.pricebox-box > .title-container > .title{
+  font-size: 1.3em;
+  color:#fff;
+  font-family: 'Roboto','sans-serif';
+  margin: 20px;
+  transition: all 2s;
+}
+.pricebox-box:hover{
+top: -10px;
+}
+.title-container:hover{
+  background-color: #ff6767;
+}

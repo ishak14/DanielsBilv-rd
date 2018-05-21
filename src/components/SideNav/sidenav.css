@@ -1,0 +1,12 @@
+.side-nav{
+  position: absolute;
+  top:50%;
+  right: 3%;
+	width: 3px;
+	height: 300px;
+	background-color: darkgray;
+  border-color: blue;
+  z-index: 100;
+  border-radius: 10%;
+  position: fixed;
+}

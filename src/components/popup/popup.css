@@ -1,0 +1,78 @@
+.button-style{
+border-radius: 10px !important;
+background-color: #2d729f;
+//border: 3px solid #2d729f;
+border-radius: 10px;
+width: 20%;
+grid-row-start:2;
+grid-row-end:4;
+grid-column-start: 1;
+grid-column-end: 3;
+margin: 5px;
+width: 50%;
+}
+.button-style button{
+border-radius: 10px !important;
+}
+.button-style button div:hover{
+background-color: #ea5325 !important;
+}
+.button-style button div span{
+  display: flex !important;
+ color: white !important;
+ font-size: 0.6em !important;
+ justify-content: space-between !important;
+}
+.button-style div{
+  background-color: #213360 !important;
+  //border: 3px solid #2d729f;
+  border-radius: 10px !important;
+}
+.dialog div div div {
+
+}
+.dialog div div div button {
+  background-color: #e34747 !important;
+}
+.dialog div div div button:hover {
+  background-color: #ff6767 !important;
+}
+.dialog div div div button div span{
+  color: white !important;
+}
+
+@media screen and (max-width:992px){
+  .button-style{
+    width: 250px;
+    border-radius: 0px !important;
+    height: 30px !important;
+  }
+  .button-style div{
+
+    border-radius: 0px !important;
+  }
+  .button-style button{
+  height: 30px !important;
+  width: 80%;
+  }
+}
+
+@media screen and (max-width:414px){
+  .button-style{
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width:400px){
+  .button-style{
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width:320px){
+  .button-style{
+    width: 100%;
+    font-size: 0.8em;
+  }
+}

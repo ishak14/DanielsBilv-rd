@@ -1,0 +1,122 @@
+{
+    "open_hours": {
+      "label": "Öppettider",
+      "weekdays": {
+        "weekdays": "vardagar",
+        "time_open": "08:00",
+        "time_close": "18:00"
+      },
+      "weekends":{
+        "weekends": "helger",
+        "time_open" : "10:00",
+        "time_close": "15:00"
+      }
+    },
+    "phone_number":{
+      "label": "Telefonnummer",
+      "phone_number": "072-284 08 44"
+    },
+    "email": {
+      "label": "Mejl",
+      "email":"info@danielsbilvard.se"
+    },
+    "address":{
+      "label":"Adress",
+      "address":"Västerleden 50, 63347 Eskilstuna"
+    },
+    "pages":{
+      "startpage": "Startsida",
+      "offerspage":"Prislista",
+      "infopage":"Boka tid/Kontakta oss"
+    },
+    "offerspage":{
+      "subtitle": "Dani skriv en text här",
+      "outside_wash": {
+        "title": "utvändigt"
+      },
+      "outside":{
+        "item1":{
+          "title": "handtvätt utvändigt",
+          "price": "159kr",
+          "text": ""
+        },
+        "item2":{
+          "title": "ut och in tvätt",
+          "price": "fr 299kr",
+          "text": ""
+        },
+        "item3":{
+          "title": "supertvätt",
+          "price": "399kr",
+          "text": ""
+        },
+        "item4":{
+          "title": "motortvätt",
+          "price": "159kr",
+          "text": ""
+        },
+        "item5":{
+          "title": "däckbyte",
+          "price": "149kr",
+          "text": ""
+        },
+        "item6":{
+          "title": "lätt lastbil",
+          "price": "fr 599kr",
+          "text": ""
+        },
+        "item7":{
+          "title": "husbilstvätt",
+          "price": "799kr",
+          "text": ""
+        },
+        "item8":{
+          "title": "vaxning",
+          "price": "699kr",
+          "text": ""
+        },
+        "item9":{
+          "title": "helrekond",
+          "price": "fr 1399kr",
+          "text": ""
+        },
+        "item10":{
+          "title": "polering",
+          "price": "fr 899kr",
+          "text": ""
+        },
+        "item11":{
+          "title": "lackskydd",
+          "price": "fr 3499kr",
+          "text": ""
+        },
+        "item1":{
+          "title": "keramisk lackskydd",
+          "price": "fr 4499kr",
+          "text": ""
+        }
+      },
+      "inside":{
+        "item1":{
+          "title": "invändig tvätt",
+          "price": "159kr",
+          "text": ""
+        },
+        "item2":{
+          "title": "klädseltvätt",
+          "price": "fr 699kr",
+          "text": ""
+        },
+        "item3":{
+          "title": "skinnbehandling",
+          "price": "499kr",
+          "text": ""
+        },
+        "item4":{
+          "title": "skinnbehandling",
+          "price": "499kr",
+          "text": ""
+        }
+      }
+    }
+}

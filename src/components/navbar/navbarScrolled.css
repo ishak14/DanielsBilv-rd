@@ -17,7 +17,7 @@
   padding: 0px 16px;
   font-family: sans-serif;
   color: white;
-  position: fixed;
+  position: flex;
   left:0;
   top:0;
   background-color: #fff;
@@ -29,6 +29,7 @@
 
 }
 .topbar a{
+  font-family: "roboto","sans-serif";
   color: black;
   text-decoration: none;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -43,7 +44,7 @@
 }
 
 .hide{
-  top:-110px
+  top:-150px
 }
 
 .topbar-items{
@@ -99,7 +100,7 @@
 .displayNone{
   display: flex;
 }
-@media screen and (max-width:786px){
+@media screen and (max-width:992px){
   .topbar a{
     font-size: 0.8em;
 
@@ -126,7 +127,8 @@
   }
   .topbar .brand-small-toggle{
     display: block;
-    height: 2.5em;
+    height: 1.5em;
+    margin: 5px 10px;
   }
   .topbar i{
     color: black;
@@ -161,8 +163,14 @@
   .hide{
   top:0px;
   }
-  .displayNone{
-    display: none;
+  .topbar-link.about-us{
+    margin-bottom: 40px;
+  }
+  .hideLinks{
+    top:-280px;
+  }
+  .hideTopbar{
+    top:-350px;
   }
   .nav-icon4 {
 }

@@ -39,7 +39,7 @@
   height: 350px;
   width: 300px;
   transition: all 0.5s;
-  margin: 0px 30px;
+  margin: 30px 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,6 +93,25 @@ i{
     margin-left: auto;
     margin-right: auto;
   }
+  .infopage .container .square{
+    margin: 0px 0px;
+    justify-content: space-evenly;
+    height: 300px;
+  }
+  .infopage .container .circle{
+    margin: 0px;
+  }
+  .infopage .container .map-style{
+    margin: 0px 0px;
+  }
+  .infopage .container .map-style:hover {
+    //margin:0;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    align-items: center;
+  }
 }
 @media screen and (max-width:500px){
   .infopage{
@@ -104,10 +123,10 @@ i{
  .infopage .container .square{
    height: 100%;
    width: auto;
-
-   margin: 11px 0px;
+   margin: 0px 0px;
    -ms-flex-pack: justify;
    justify-content: space-evenly;
+   height: 230px;
  }
 .infopage .container .circle{
   height: 150px;
@@ -118,19 +137,10 @@ i{
 .infopage .container .map-style {
   height: 150px;
   width: 150px;
+  margin: 0px;
 }
 .infopage {
     background: linear-gradient(172deg, #e6e6e6 70%, #e6e6e6 40%);
 }
-.infopage .container .map-style:hover {
-  height: 150px;
-  border-radius: 50%;
-  width: 150px;
-  transition: all 1s;
-  border: 6px solid white;
-  background: linear-gradient(180deg,orange,red);
-  margin: 40px;
-  display: flex;
-  align-items: center;
-}
+
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './navbarScrolled.css';
-import brandLogo from '../icons/dbs-black.svg';
+import brandLogo from '../icons/dbs2.svg';
 import localization from '../../localization';
 
 export default class NavbarScrolled extends Component {
@@ -10,22 +10,47 @@ export default class NavbarScrolled extends Component {
     this.setState({
       isHide:false,
       toggle:false,
-      display:'displayNone',
+      display:'hideLinks',
       toggleIcon: ''
     });
     this.state = this.hideBar = this.hideBar.bind(this)
   }
   hideBar(){
-     let {isHide} = this.state
-     window.scrollY < this.prev?
-     !isHide && this.setState({isHide:true})
-     :
-     isHide && this.setState({isHide:false})
 
-     if(window.scrollY === 0){
-       this.setState({isHide:false});
-       console.log("scroll = 0");
-     }
+    if(window.scrollY === 0){
+      if(window.innerWidth > 992){
+            console.log("vafan")
+        this.setState({
+          isHide:false,
+          display:''})
+      }
+      else {
+        this.setState({
+          isHide:true})
+      }
+    }
+    else if(window.scrollY < this.prev ){
+      if(this.state.toggle === true && window.scrollY < this.prev - 3){
+          this.toggle();
+      }
+      else {
+      this.setState({
+      isHide:true,
+      display:'hideLinks'})
+    }
+    }
+    else if (window.scrollY >= this.prev) {
+      if(this.state.toggle === true && window.scrollY > this.prev + 3){
+          this.toggle();
+      }
+      else{
+      this.setState({
+      isHide:false,
+      display:'hideTopbar'})
+    }
+    }
+
+
      this.prev = window.scrollY;
   }
   componentWillMount() {
@@ -33,9 +58,11 @@ export default class NavbarScrolled extends Component {
       isHide:false,
       toggle:false,
       toggleIcon:'',
-      display:'displayNone'
+      display:'hideLinks'
     })
-
+    if (window.scrollY === 0 && window.innerWidth < 992) {
+      this.setState({isHide:true});
+    }
   }
 
   componentDidMount(){
@@ -45,19 +72,32 @@ export default class NavbarScrolled extends Component {
        window.removeEventListener('scroll',this.hideBar);
   }
   toggle = () => {
-    console.log(this.state.toggle);
-    this.setState(prevState => ({
-    toggle: !prevState.toggle
-  }));
-  this.state.display = this.state.toggle ? '': 'displayNone';
-  this.state.toggleIcon = this.state.toggle ? 'nav-icon4-open': '';
 
-  console.log(this.state.toggle);
+    this.setState({
+    toggle: !this.state.toggle,
+  }, () => {
+    if(this.state.toggle){
+      this.setState({
+        display: '',
+        toggleIcon: 'nav-icon4-open'
+      })
+    }
+    else{
+      this.setState({
+        display: 'hideLinks',
+        toggleIcon: ''
+      })
+    }
+  });
+
+
+
+
   }
   render() {
     let classHide=this.state.isHide?"":"hide"
         return (
-          <div className={"topbar "+classHide}>
+          <div className={"topbar "+classHide + ' '+this.state.display}>
               <div onClick={this.toggle} className="topbar-link topbar-link-toggle">
                 <img src={brandLogo} className='brand-small-toggle'/>
                   <div className={"nav-icon4 "+this.state.toggleIcon}>
@@ -67,7 +107,7 @@ export default class NavbarScrolled extends Component {
                 </div>
               </div>
               <img src={brandLogo} className='brand-small'/>
-              <nav className={"topbar-items topbar-items-right "+this.state.display}>
+              <nav className={"topbar-items topbar-items-right "}>
                 <div className="topbar-link startpage">
                   <a onClick={this.toggle} href="#first">Startsida</a>
                 </div>

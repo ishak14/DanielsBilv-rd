@@ -17,7 +17,7 @@ export default class Infopage extends Component {
 							isMarkerShown
 							googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
 							loadingElement={<div style={{ height: `100px` }} />}
-							containerElement={<div style={{ height: `230px` }} />}
+							containerElement={<div style={{ height: `75%` }} />}
 							mapElement={<div className='map-style'/>}
 							defaultOptions={{mapTypeControl: false}}
 						/>
